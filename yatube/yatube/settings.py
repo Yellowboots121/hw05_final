@@ -1,5 +1,3 @@
-from dotenv import load_dotenv
-from pathlib import Path
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -15,10 +13,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-load_dotenv()
-env_path = Path('.') / '.env'
-load_dotenv(dotenv_path=env_path)
-SECRET_KEY = os.getenv("SECRET_KEY")
+
+SECRET_KEY = 'd^q#5trk!wt#&q4dr)z4(62xfx^qp__quh93dvq+64#+klxy*@'
 
 EMPTY_VALUE_FILLER = '-пусто-'
 # кол-во постов на странице
